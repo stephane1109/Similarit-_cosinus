@@ -14,7 +14,7 @@ from networkx.algorithms.community import greedy_modularity_communities
 nlp = spacy.load("fr_core_news_lg")
 
 # Charger le texte depuis le fichier et le normaliser
-with open("/Users/stephanemeurisse/Documents/Recherche/Match_Patterns_Spacy/psychiatrie-darmanin-clean.txt", "r", encoding="utf-8") as f:
+with open("/Users/psychiatrie-darmanin-clean.txt", "r", encoding="utf-8") as f:
     texte = f.read().lower().strip()  # Passage en minuscule et suppression des espaces inutiles
 
 doc = nlp(texte)
